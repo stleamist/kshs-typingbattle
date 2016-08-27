@@ -1,0 +1,22 @@
+<footer id="footer">
+	<div class="footer-container">
+		<% if (typeof locals.theFirst != 'undefined') {%>
+			<div class="footer_speed-wrapper">
+				<span id="footer_speed-current" class="footer_speed">0</span>
+				<span class="footer_speed">타</span>
+				<span class="footer_speed footer_speed-slash">/</span>
+				<span id="footer_speed-max" class="footer_speed"><%= locals.theFirst.typingSpeed %></span>
+				<span class="footer_speed">타</span>
+			</div>
+		<% } %>
+		<% if (typeof locals.showFooterLink != 'undefined') {%>
+			<div class="footer_left">
+				<% if (locals.showFooterLink.isRoot) { %>
+					<a href="#" id="footer_show-dashboard" class="footer_show-link">순위표</a>
+				<% } else { %>
+					<a href="#" id="footer_hide-dashboard" class="footer_show-link">뒤로가기</a>
+				<% } %>
+			</div>
+		<% } %>
+	</div>
+</footer>

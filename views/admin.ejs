@@ -1,0 +1,16 @@
+<main id="main">
+	<table id="admin-table" class="table table-bordered">
+		<tr>
+			<th>학번</th>
+			<th>이름</th>
+			<th>문장</th>
+		</tr>
+		<% locals.rows.forEach(function (item) { %>
+			<tr>
+				<td><%= item.number %></td>
+				<td><%= item.name %></td>
+				<td><%= item.sentence %></td>
+			</tr>
+		<% }); %>
+	</table>
+</main>

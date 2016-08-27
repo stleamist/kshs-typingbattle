@@ -1,0 +1,20 @@
+<main id="main">
+	<div class="main_dashboard-wrapper">
+		<table id="main_dashboard">
+			<tr>
+				<th>순위</th>
+				<th>학번</th>
+				<th>이름</th>
+				<th>타자속도</th>
+			</tr>
+			<% locals.students.forEach(function (item) { %>
+				<tr>
+					<td><%= item.rank %>위</td>
+					<td><%= item.number %></td>
+					<td><%= item.name %></td>
+					<td><%= item.typingSpeed %>타</td>
+				</tr>
+			<% }); %>
+		</table>
+	</div>
+</main>

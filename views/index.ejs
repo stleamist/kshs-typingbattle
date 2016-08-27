@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex">
+		<title>타자배틀 - 광신고등학교 컴퓨터부</title>
+		<link rel="stylesheet" href="/css/typebattle.css">
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://rawgit.com/e-/Hangul.js/master/hangul.js"></script>
+		<script src="/js/index.js"></script>
+		
+		<%- include('index_header'); %>
+		<%- include('index_main-login'); %>
+		<%- include('index_footer'); %>
+		<% if (locals.env == 'dev') { %>
+			<div id="dev-locals">
+				<p><%= JSON.stringify(locals._locals) %></p>
+			</div>
+		<% } %>
+		<p id="copyright">developed by Team FLOW @ KSHS<br>&copy; Copyright 2016 All Rights Reserved.</p>
+	</body>
+</html>

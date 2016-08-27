@@ -1,0 +1,14 @@
+<header id="header">
+	<div class="header-container">
+		<div class="header_title-wrapper">
+			<h1 class="header_title">타자배틀</h1>
+			<h3 class="header_title-school">광신고등학교</h3>
+		</div>
+		<% if (typeof locals.studentID != 'undefined') {%>
+			<div class="header_studentID-wrapper">
+				<h2 class="header_studentID-studentName"><%= locals.studentID.name %></h2>
+				<h3 class="header_studentID-studentNumber"><%= locals.studentID.number %></h3>
+			</div>
+		<% } %>
+	</div>
+</header>
