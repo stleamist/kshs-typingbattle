@@ -14,7 +14,7 @@
     "express-session": "^1.14.0",
     "hangul-js": "^0.2.2",
     "less-middleware": "1.0.x",
-    "morgan": "~1.7.0",
+    "morgan": "~1.9.1",
     "mysql": "^2.11.1",
     "serve-favicon": "~2.3.0",
     "socket.io": "^1.4.8"
